@@ -44,7 +44,7 @@ class GetTime {
   public function getTime($timezone = 'Asia/Kolkata') {
     $current_time = $this->time->getCurrentTime();
     if ($current_time && $timezone) {
-      $formatted_time = $this->dateFormatter->format($current_time, 'custom', 'd M Y - H:i A', $timezone);
+      $formatted_time = $this->dateFormatter->format($current_time, 'custom', 'jS M Y - H:i A', $timezone);
       return $formatted_time;
     }
     return '';
