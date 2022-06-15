@@ -1,0 +1,4 @@
+services:
+  display_time.get_time:
+    class: Drupal\display_time\GetTime
+    arguments: ['@date.formatter', '@datetime.time']

@@ -1,0 +1,7 @@
+display_time.configuration:
+  path: '/admin/config/development/timezone-configuration'
+  defaults:
+    _form: '\Drupal\display_time\Form\LocationConfigurationForm'
+    _title: 'Location configurations'
+  requirements:
+    _permission: 'access content'

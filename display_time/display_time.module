@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for Display time module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function display_time_theme() {
+  return [
+    'display_time' => [
+      'variables' => [
+        'country' => NULL,
+        'city' => NULL,
+        'output_time' => NULL
+      ],
+    ],
+  ];
+}
